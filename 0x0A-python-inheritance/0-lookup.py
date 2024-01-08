@@ -1,9 +1,10 @@
 #!/usr/bin/python3
-"""
-Contains the lookup function
-"""
+"""Defines an inherited list class MyList."""
 
 
-def lookup(obj):
-    """returns a list of available attributes and methods of an object"""
-    return dir(obj)
+class MyList(list):
+    """Implements sorted printing for the built-in list class."""
+
+    def print_sorted(self):
+        """Print a list in sorted ascending order."""
+        print(sorted(self))
